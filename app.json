@@ -1,0 +1,68 @@
+{
+  "expo": {
+    "name": "CouCou Client",
+    "description": "CouCou Client App",
+    "slug": "CouCouClient",
+    "privacy": "public",
+    "sdkVersion": "38.0.0",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "notification": {
+      "icon": "./assets/images/push_notification.png"
+    },
+    "version": "4.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/appIcon.png",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "usesAppleSignIn":true,
+      "bundleIdentifier": "online.coucouapp.client",
+      "infoPlist": {
+        "NSLocationAlwaysUsageDescription": "This app uses the location to find the Cabs near you.",
+        "NSLocationWhenInUseUsageDescription": "This app uses the location to find the Cabs near you.",
+        "NSCameraUsageDescription": "This app uses the camera to take your profile picture.",
+        "NSPhotoLibraryUsageDescription": "This app uses Photo Library for uploading your profile picture.",
+        "UIBackgroundModes": [
+        "location",
+        "fetch"
+        ]
+      },
+      "config": {
+        "googleMapsApiKey": "AIzaSyB0tGZP-AwiytQvzkNccJbFEyf34AN2x7g"
+      }
+    },
+    "android": {
+      "package": "online.coucouapp.client",
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "CAMERA_ROLL"
+      ],
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyB0tGZP-AwiytQvzkNccJbFEyf34AN2x7g"
+        }
+      }
+    },
+    "facebookScheme": "fb1545982482372770",
+    "facebookAppId": "1545982482372770",
+    "facebookDisplayName": "INBOX"
+  }
+}
